@@ -8,9 +8,12 @@ import { LoginComponent } from './login/login.component';
 
 import { APP_ROUTES } from './app.routes';
 import { RegisterComponent } from './login/register.component';
-import { PagesModule } from './pages/pages.module';
 
 // Modulos
+import { PagesModule } from './pages/pages.module';
+// import { IncrementadorComponent } from './components/incrementador/incrementador.component';
+
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,11 +21,13 @@ import { PagesModule } from './pages/pages.module';
     AppComponent,
     LoginComponent,
     RegisterComponent,
+   // IncrementadorComponent,
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
