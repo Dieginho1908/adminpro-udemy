@@ -33,9 +33,11 @@ export class IncrementadorComponent implements OnInit {
 
   cambiarValor(valor) {
     if (this.porcentaje >= 100 ) {
+      this.porcentaje = 100;
       return;
     }
     if (this.porcentaje <=  0) {
+      this.porcentaje = 0;
       return;
     }
     this.porcentaje = this.porcentaje + valor;
